@@ -1,0 +1,26 @@
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  width: min(100% - 2.5rem, 72rem);
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.product-list__empty {
+  width: min(100% - 2.5rem, 72rem);
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border: 1px solid #cde2d7;
+  border-radius: 0.7rem;
+  background: #ffffff;
+  color: #315a50;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .product-list {
+    width: min(100% - 2rem, 72rem);
+    grid-template-columns: 1fr;
+  }
+}
