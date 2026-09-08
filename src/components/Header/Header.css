@@ -88,6 +88,12 @@
   font-size: 0.9rem;
 }
 
+.site-header__search {
+  flex: 1;
+  min-width: 12rem;
+  max-width: 34rem;
+}
+
 @media (max-width: 420px) {
   .site-header {
     padding-block: 0.8rem;
@@ -104,5 +110,17 @@
 
   .site-header__cart-label {
     display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  .site-header__search {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
   }
 }

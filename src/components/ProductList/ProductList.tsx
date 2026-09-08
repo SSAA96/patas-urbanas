@@ -8,6 +8,10 @@ type ProductListProps = {
 }
 
 function ProductList({ products = productData, onAddToCart }: ProductListProps) {
+  if (products.length === 0) {
+    return <p className="product-list__empty">No encontramos productos con esos filtros.</p>
+  }
+
   return (
     <section className="product-list" aria-label="Productos disponibles">
       {products.map((product) => (

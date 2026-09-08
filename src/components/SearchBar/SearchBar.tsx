@@ -3,11 +3,12 @@ import './SearchBar.css'
 type SearchBarProps = {
   value: string
   onChange: (value: string) => void
+  compact?: boolean
 }
 
-function SearchBar({ value, onChange }: SearchBarProps) {
+function SearchBar({ value, onChange, compact = false }: SearchBarProps) {
   return (
-    <div className="search-bar" role="search">
+    <div className={`search-bar ${compact ? 'search-bar--compact' : ''}`} role="search">
       <label className="search-bar__label" htmlFor="product-search">
         Buscar productos
       </label>
