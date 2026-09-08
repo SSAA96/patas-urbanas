@@ -1,4 +1,7 @@
 .product-card {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   overflow: hidden;
   border: 1px solid #cde2d7;
   border-radius: 1rem 1rem 1rem 0.3rem;
@@ -15,6 +18,9 @@
 }
 
 .product-card__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   padding: 1rem;
 }
 
@@ -31,6 +37,7 @@
 }
 
 .product-card__name {
+  min-height: 2.5em;
   margin-top: 0.35rem;
   color: #163846;
   font-size: 1.05rem;
@@ -38,8 +45,16 @@
 }
 
 .product-card__price {
-  margin-top: 0.8rem;
   color: #0a7560;
   font-size: 1.15rem;
   font-weight: 700;
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: auto;
+  padding-top: 1rem;
 }
