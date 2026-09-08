@@ -1,6 +1,10 @@
 import './Header.css'
 
-function Header() {
+type HeaderProps = {
+  cartCount: number
+}
+
+function Header({ cartCount }: HeaderProps) {
   return (
     <header className="site-header">
       <a className="site-header__brand" href="/" aria-label="Ir al inicio de Patas Urbanas">
@@ -12,6 +16,11 @@ function Header() {
           <span className="site-header__tagline">Tienda para mascotas</span>
         </span>
       </a>
+      <div className="site-header__cart" aria-label={`${cartCount} productos en el carrito`}>
+        <span aria-hidden="true">🛒</span>
+        <span className="site-header__cart-label">Carrito</span>
+        <span className="site-header__cart-count">{cartCount}</span>
+      </div>
     </header>
   )
 }
