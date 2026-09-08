@@ -1,0 +1,29 @@
+.site-footer {
+  padding: 2rem 1.25rem;
+  background: #163846;
+  border-top: 4px solid #67c5a1;
+  color: #eaf6ef;
+  text-align: center;
+}
+
+.site-footer__brand,
+.site-footer__description,
+.site-footer__copyright {
+  margin: 0;
+}
+
+.site-footer__brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.site-footer__description {
+  margin-top: 0.3rem;
+  color: #b9d9c9;
+}
+
+.site-footer__copyright {
+  margin-top: 1rem;
+  color: #9fc6b2;
+  font-size: 0.82rem;
+}
