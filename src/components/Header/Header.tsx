@@ -7,7 +7,10 @@ function Header() {
         <span className="site-header__logo" aria-hidden="true">
           🐾
         </span>
-        <span>Patas Urbanas</span>
+        <span className="site-header__brand-text">
+          <span className="site-header__name">Patas Urbanas</span>
+          <span className="site-header__tagline">Tienda para mascotas</span>
+        </span>
       </a>
     </header>
   )
