@@ -21,32 +21,3 @@ body {
 #root {
   min-height: 100vh;
 }
-
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.app__content {
-  flex: 1;
-}
-
-.app__catalog {
-  padding: 2rem 0;
-}
-
-.app__filters {
-  width: min(100% - 2.5rem, 72rem);
-  margin: 0 auto;
-}
-
-@media (max-width: 520px) {
-  .app__catalog {
-    padding-block: 1.25rem;
-  }
-
-  .app__filters {
-    width: min(100% - 2rem, 72rem);
-  }
-}
